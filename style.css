@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A1A1C;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.container{
+    padding: 20px 40px;
+}
+.container2{
+    padding: 0px 40px;
+}
+@media screen and (max-width: 430px){
+    .container{
+        padding: 10px 20px;
+    }
+    .container2{
+        padding: 0px 20px;
+    }
+}
+
+
+.nav{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    width: 60vw;
+    padding: 15px;
+    color: white;
+    background-color: #1A1A1C;
+    border: 1px solid white;
+}
+button{
+    width: 18vw;
+    padding: 15px;
+    color: white;
+    background-color: #1A1A1C;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+    input{
+        font-size: 18px;
+        width: 55vw;
+    }
+    button{
+        width: 22vw;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .nav{
+        gap: 10px;
+    }
+    input{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 20vh;
+    }
+    input{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+    button{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 368px) {
+    .nav{
+        height: 23vh;
+    }
+}
+
+
+.table{
+    width: 100%;
+    overflow-x: scroll; 
+}
+.table::-webkit-scrollbar {
+    display: none;
+}
+.table-main{
+    width: 1438px;
+}
+.table tbody tr{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+.table tbody tr td:nth-child(1){
+    width: 20%;
+}
+.table tbody tr td:nth-child(2){
+    width: 10%; 
+}
+.table tbody tr td:nth-child(3){
+    width: 10%;
+}
+.table tbody tr td:nth-child(4){
+    width: 20%;
+}
+.table tbody tr td:nth-child(5){
+    width: 10%;
+}
+.table tbody tr td:nth-child(6){
+    width: 20%;
+}
+.coin-img, td{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.coin-img img{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 890px){
+    .table tbody tr td{
+        font-size: 15px;
+    }
+    .table-main{
+        width: 1138px;
+    }
+}
+@media screen and (max-width: 430px){
+    .table{
+        margin-top: 30px;
+    }
+    .table-main{
+        width: 820px;
+    }
+}
